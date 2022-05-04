@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+:root {
+  --bg-main: hsl(217, 54%, 11%);
+  --bg-card: hsl(216, 50%, 16%);
+  --colour-blue: hsl(215, 51%, 70%);
+  --colour-cyan: hsl(178, 100%, 50%);
+  --colour-white: hsl(0, 0%, 100%);
+  --line-colour: hsl(215, 32%, 27%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit';
+}
+body {
+  display: flex;
+  background-color: var(--bg-main);
+  flex-direction: column;
+  position: relative;
+  font-family: sans-serif;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  color: var(--colour-blue);
+}
+.eth-equi-img {
+  display: block;
+  max-height: 360px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+}
+.eth-equi-img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  color: var(--colour-cyan);
+}
+.eth-card {
+  background-color: var(--bg-card);
+  display: flex;
+  flex-direction: column;
+  gap: 3%;
+  padding: 20px;
+  width: 400px;
+  max-width: 400px;
+  min-width: 321px;
+  height: 650px;
+  border-radius: 3%;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+}
+.eth-title {
+  color: var(--colour-white);
+  font-weight: 900;
+  font-size: 1.8rem;
+}
+.eth-title:hover {
+  color: var(--colour-cyan);
+  cursor: pointer;
+}
+.eth-txt {
+  font-size: 1.1rem;
+  letter-spacing: 0.015em;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+.icon_etherieum {
+  background-size: cover;
+  background-position: center;
+  height: 15px;
+  width: 10px;
+  margin: auto;
+}
+.eth-pri {
+  display: flex;
+  width: 130px;
+}
+.eth-price {
+  margin-left: 10px;
+  color: var(--colour-cyan);
+  font-weight: 900;
+}
+.days-go {
+  display: flex;
+  width: 120px;
+  flex-direction: row;
+  margin-left: 110px;
+}
+.clock-icon {
+  height: 20px;
+}
+.eth-days {
+  margin-left: 5px;
+}
+.pri-day {
+  display: flex;
+  line-height: 30px;
+}
+.line {
+  border-top: 1px solid hsl(215, 32%, 27%);
+}
+.user-profile {
+  background-size: cover;
+  background-position: center;
+  height: 30px;
+  width: 30px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+.profile-img {
+  height: 15%;
+  display: flex;
+  align-items: center;
+  gap: 5%;
+}
+.eth-user a {
+  color: var(--colour-white);
+  text-decoration: none;
+}
+.name:hover {
+  color: var(--colour-cyan);
+}
+.attribution {
+  line-height: 30px;
+  font-size: small;
+}
+.attribution a {
+  color: var(--colour-white);
+  text-decoration: none;
+}
+@media screen and (max-width: 300px) {
+  .eth-card {
+    flex-direction: column;
+  }
+}
